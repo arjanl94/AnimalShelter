@@ -6,18 +6,22 @@ using System.Threading.Tasks;
 
 namespace AnimalShelter
 {
-    class Reservation
+    public class Reservation
     {
         public Cat cat { get; private set; }
         public Dog dog { get; private set; }
+        public List<Dog> dogs = new List<Dog>();
+        public List<Cat> cats = new List<Cat>();
 
         public void NewCat(string name, Gender gender, string badhabits)
         {
             cat = new Cat(name, gender, badhabits);
+            cats.Add(cat);
         }
         public void NewDog(string name, Gender gender)
         {
             dog = new Dog(name, gender);
+            dogs.Add(dog);
         }
     }
 }

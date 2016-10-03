@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace AnimalShelter
 {
-    public class Reservor
+    public abstract class Animal
     {
         public string Name { get; set; }
-        public DateTime ReservedAt { get; set; }
+        public Gender gender { get; set; }
 
-        public Reservor(string name, DateTime reservedat)
+        public Animal(string name, Gender gender)
         {
             Name = name;
-            ReservedAt = reservedat;
+            this.gender = gender;
         }
     }
 }

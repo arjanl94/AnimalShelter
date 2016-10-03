@@ -6,13 +6,11 @@ using System.Threading.Tasks;
 
 namespace AnimalShelter
 {
-    class Dog
+    public class Dog : Animal
     {
-        string Name { get; set; }
-        Gender gender { get; set; }
-        DateTime LastWalk { get; set; }
+        public DateTime LastWalk { get; set; }
 
-        public Dog(string name, Gender gender)
+        public Dog(string name, Gender gender) :base(name, gender)
         {
             Name = name;
             this.gender = gender;
