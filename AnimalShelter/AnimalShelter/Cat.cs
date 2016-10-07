@@ -24,5 +24,18 @@ namespace AnimalShelter
         {
             return $"Name: {Name}, Gender: {gender}, Bad Habits: {BadHabits}";
         }
+        public override bool SellAnimal()
+        {
+            decimal price = BadHabits.Length * 20;
+            if (price < 350)
+            {
+                Price = price;
+            }
+            else
+            {
+                Price = 350;
+            }
+            return true;
+        }
     }
 }

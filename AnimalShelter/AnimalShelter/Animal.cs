@@ -6,15 +6,19 @@ using System.Threading.Tasks;
 
 namespace AnimalShelter
 {
-    public abstract class Animal
+    public abstract class Animal : ISellable
     {
-        public string Name { get; set; }
+        public string name { get; set; }
         public Gender gender { get; set; }
+
+        public string Name { get; set; }
+        public decimal Price { get; set; }
 
         public Animal(string name, Gender gender)
         {
-            Name = name;
+            this.name = name;
             this.gender = gender;
         }
+        public abstract bool SellAnimal();
     }
 }
