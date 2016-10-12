@@ -39,12 +39,19 @@
             this.btnadd = new System.Windows.Forms.Button();
             this.lbanimals = new System.Windows.Forms.ListBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.lbproducts = new System.Windows.Forms.ListBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.btnaddproduct = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(24, 9);
+            this.label1.Location = new System.Drawing.Point(24, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(41, 13);
             this.label1.TabIndex = 0;
@@ -53,7 +60,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(27, 49);
+            this.label2.Location = new System.Drawing.Point(27, 71);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(38, 13);
             this.label2.TabIndex = 1;
@@ -62,7 +69,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(20, 88);
+            this.label3.Location = new System.Drawing.Point(20, 110);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(45, 13);
             this.label3.TabIndex = 2;
@@ -71,7 +78,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 126);
+            this.label4.Location = new System.Drawing.Point(3, 148);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(62, 13);
             this.label4.TabIndex = 3;
@@ -79,14 +86,14 @@
             // 
             // tbname
             // 
-            this.tbname.Location = new System.Drawing.Point(94, 46);
+            this.tbname.Location = new System.Drawing.Point(94, 68);
             this.tbname.Name = "tbname";
             this.tbname.Size = new System.Drawing.Size(113, 20);
             this.tbname.TabIndex = 4;
             // 
             // tbhabits
             // 
-            this.tbhabits.Location = new System.Drawing.Point(94, 123);
+            this.tbhabits.Location = new System.Drawing.Point(94, 145);
             this.tbhabits.Name = "tbhabits";
             this.tbhabits.Size = new System.Drawing.Size(113, 20);
             this.tbhabits.TabIndex = 5;
@@ -97,7 +104,7 @@
             this.cmbgender.Items.AddRange(new object[] {
             "Female",
             "Male"});
-            this.cmbgender.Location = new System.Drawing.Point(94, 85);
+            this.cmbgender.Location = new System.Drawing.Point(94, 107);
             this.cmbgender.Name = "cmbgender";
             this.cmbgender.Size = new System.Drawing.Size(113, 21);
             this.cmbgender.TabIndex = 6;
@@ -108,7 +115,7 @@
             this.cmbanimal.Items.AddRange(new object[] {
             "Cat",
             "Dog"});
-            this.cmbanimal.Location = new System.Drawing.Point(94, 6);
+            this.cmbanimal.Location = new System.Drawing.Point(94, 28);
             this.cmbanimal.Name = "cmbanimal";
             this.cmbanimal.Size = new System.Drawing.Size(113, 21);
             this.cmbanimal.TabIndex = 7;
@@ -116,7 +123,7 @@
             // 
             // btnadd
             // 
-            this.btnadd.Location = new System.Drawing.Point(94, 160);
+            this.btnadd.Location = new System.Drawing.Point(94, 171);
             this.btnadd.Name = "btnadd";
             this.btnadd.Size = new System.Drawing.Size(113, 23);
             this.btnadd.TabIndex = 8;
@@ -129,7 +136,7 @@
             this.lbanimals.FormattingEnabled = true;
             this.lbanimals.Location = new System.Drawing.Point(227, 28);
             this.lbanimals.Name = "lbanimals";
-            this.lbanimals.Size = new System.Drawing.Size(407, 134);
+            this.lbanimals.Size = new System.Drawing.Size(337, 134);
             this.lbanimals.TabIndex = 9;
             // 
             // label5
@@ -141,11 +148,76 @@
             this.label5.TabIndex = 10;
             this.label5.Text = "List of animals:";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(224, 256);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(82, 13);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "List of products:";
+            // 
+            // lbproducts
+            // 
+            this.lbproducts.FormattingEnabled = true;
+            this.lbproducts.Location = new System.Drawing.Point(227, 275);
+            this.lbproducts.Name = "lbproducts";
+            this.lbproducts.Size = new System.Drawing.Size(337, 134);
+            this.lbproducts.TabIndex = 12;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(94, 275);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(113, 20);
+            this.textBox1.TabIndex = 13;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(27, 278);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(38, 13);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "Name:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(31, 313);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(34, 13);
+            this.label8.TabIndex = 15;
+            this.label8.Text = "Price:";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(94, 310);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(113, 20);
+            this.textBox2.TabIndex = 16;
+            // 
+            // btnaddproduct
+            // 
+            this.btnaddproduct.Location = new System.Drawing.Point(94, 336);
+            this.btnaddproduct.Name = "btnaddproduct";
+            this.btnaddproduct.Size = new System.Drawing.Size(113, 23);
+            this.btnaddproduct.TabIndex = 17;
+            this.btnaddproduct.Text = "Add Product";
+            this.btnaddproduct.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(701, 292);
+            this.ClientSize = new System.Drawing.Size(824, 555);
+            this.Controls.Add(this.btnaddproduct);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lbproducts);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lbanimals);
             this.Controls.Add(this.btnadd);
@@ -177,6 +249,13 @@
         private System.Windows.Forms.Button btnadd;
         private System.Windows.Forms.ListBox lbanimals;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ListBox lbproducts;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button btnaddproduct;
     }
 }
 
