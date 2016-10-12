@@ -13,12 +13,12 @@ namespace AnimalShelter
         public List<Dog> dogs = new List<Dog>();
         public List<Cat> cats = new List<Cat>();
 
-        public void NewCat(string name, Gender gender, string badhabits)
+        public void NewCat(string name, string gender, string badhabits)
         {
             cat = new Cat(name, gender, badhabits);
             cats.Add(cat);
         }
-        public void NewDog(string name, Gender gender)
+        public void NewDog(string name, string gender)
         {
             dog = new Dog(name, gender);
             dogs.Add(dog);

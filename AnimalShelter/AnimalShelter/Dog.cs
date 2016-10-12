@@ -11,10 +11,10 @@ namespace AnimalShelter
         public DateTime LastWalk { get; set; }
         public static int Aantal { get; set; }
 
-        public Dog(string name, Gender gender) :base(name, gender)
+        public Dog(string name, string gender) :base(name, gender)
         {
             Name = name;
-            this.gender = gender;
+            this.gender = (Gender)Enum.Parse(typeof(Gender), gender);
         }
         public bool Reserve()
         {

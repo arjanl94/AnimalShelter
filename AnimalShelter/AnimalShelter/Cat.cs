@@ -10,10 +10,10 @@ namespace AnimalShelter
     {
         public string BadHabits { get; set; }
 
-        public Cat(string name, Gender gender, string badhabits) :base(name, gender)
+        public Cat(string name, string gender, string badhabits) :base(name, gender)
         {
             Name = name;
-            this.gender = gender;
+            this.gender = (Gender)Enum.Parse(typeof(Gender), gender);
             BadHabits = badhabits;
         }
         public bool Reserve()

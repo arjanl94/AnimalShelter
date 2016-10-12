@@ -6,3 +6,4 @@ D:\Users\user\Documents\GitHub\AnimalShelter\AnimalShelter\AnimalShelter\obj\Deb
 D:\Users\user\Documents\GitHub\AnimalShelter\AnimalShelter\AnimalShelter\obj\Debug\AnimalShelter.csproj.GenerateResource.Cache
 D:\Users\user\Documents\GitHub\AnimalShelter\AnimalShelter\AnimalShelter\obj\Debug\AnimalShelter.exe
 D:\Users\user\Documents\GitHub\AnimalShelter\AnimalShelter\AnimalShelter\obj\Debug\AnimalShelter.pdb
+D:\Users\user\Documents\GitHub\AnimalShelter\AnimalShelter\AnimalShelter\obj\Debug\AnimalShelter.Form1.resources

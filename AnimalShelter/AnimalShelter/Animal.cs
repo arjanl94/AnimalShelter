@@ -14,10 +14,10 @@ namespace AnimalShelter
         public string Name { get; set; }
         public decimal Price { get; set; }
 
-        public Animal(string name, Gender gender)
+        public Animal(string name, string gender)
         {
             this.name = name;
-            this.gender = gender;
+            this.gender = (Gender)Enum.Parse(typeof(Gender), gender);
         }
         public abstract bool SellAnimal();
     }
